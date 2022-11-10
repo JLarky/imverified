@@ -26,7 +26,7 @@ const fetchData = async (username: string) => {
 				linkedin: "https://www.linkedin.com/in/jlarky/",
 			},
 			qrCode: await QRCode.toDataURL(
-				`https://bitchimverified.onrender.com/users/${username}`,
+				`https://imverified.up.railway.app/users/${username}`,
 				{ color: { dark: "#1d9bf0", light: "#fff" } },
 			),
 		};
