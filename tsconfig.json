@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "strict": true,
+    "strictNullChecks": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "target": "ESNext",
