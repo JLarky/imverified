@@ -93,7 +93,7 @@ function Verified(props: { person: Person }) {
 							This user is verified
 						</h2>
 						<p class="text-xl text-gray-500">
-							This user vent through out vetting process and is now verified.
+							This user went through out vetting process and is now verified.
 						</p>
 					</div>
 					<ul
