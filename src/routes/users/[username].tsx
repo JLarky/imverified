@@ -1,7 +1,5 @@
 import { createResource, For, Show } from "solid-js";
 import { A, RouteDataArgs, useRouteData } from "solid-start";
-import server$ from "solid-start/server";
-import Counter from "~/components/Counter";
 import QRCode from "qrcode";
 
 type Person = {
@@ -49,9 +47,33 @@ export default function User() {
 			<Show
 				when={(() => {
 					const p = data();
+					return p?.verfiied === false;
+				})()}
+				keyed
+			>
+				<main class="text-center mx-auto text-gray-700 p-4">
+					<h1 class="max-6-xs text-6xl text-sky-700 font-thin uppercase my-16">
+						Not verified. What a loser.
+					</h1>
+
+					<div class="mx-auto sm:max-w-[500px]">
+						<iframe
+							class="w-full sm:w-[500px] h-[300px] sm:h-[500px]"
+							src="https://www.youtube.com/embed/UAj1NXaB4lc"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
+						></iframe>
+					</div>
+				</main>
+			</Show>
+			<Show
+				when={(() => {
+					const p = data();
 					return p?.verfiied && p;
 				})()}
-				fallback={<div>Loading...</div>}
+				fallback={data() === undefined && <div>Loading...</div>}
 				keyed
 			>
 				{(person) => <Verified person={person} />}
