@@ -66,6 +66,15 @@ export default function User() {
 							allowfullscreen
 						></iframe>
 					</div>
+
+					<p class="my-4">
+						<a
+							class="text-sky-600 hover:underline"
+							href="https://twitter.com/JLarky/status/1590772647713198080"
+						>
+							How?
+						</a>
+					</p>
 				</main>
 			</Show>
 			<Show
