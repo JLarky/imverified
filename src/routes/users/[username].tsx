@@ -79,7 +79,7 @@ function Verified(props: { person: Person }) {
 						class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8"
 					>
 						<li>
-							<div class="space-y-4">
+							<div class="space-y-4 ml-[190px]">
 								<div class="aspect-w-3 aspect-h-2">
 									<img
 										class="rounded-lg object-cover shadow-lg"
