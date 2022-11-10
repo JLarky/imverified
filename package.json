@@ -2,6 +2,7 @@
   "name": "bitchimverified",
   "scripts": {
     "dev": "solid-start dev",
+    "fmt": "rome format src/ --write",
     "build": "solid-start build",
     "start": "solid-start start"
   },
@@ -17,6 +18,7 @@
   "dependencies": {
     "@solidjs/meta": "^0.28.0",
     "@solidjs/router": "^0.5.0",
+    "rome": "^10.0.1",
     "solid-js": "^1.6.0",
     "solid-start": "^0.2.0",
     "undici": "^5.11.0"
