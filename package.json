@@ -8,6 +8,7 @@
   },
   "type": "module",
   "devDependencies": {
+    "@locator/babel-jsx": "^0.2.2",
     "autoprefixer": "^10.4.12",
     "postcss": "^8.4.18",
     "solid-start-node": "^0.2.0",
