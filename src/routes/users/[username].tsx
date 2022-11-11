@@ -1,5 +1,5 @@
-import { createResource, For, Show } from "solid-js";
-import { A, RouteDataArgs, useRouteData } from "solid-start";
+import { createResource, Show } from "solid-js";
+import { RouteDataArgs, useRouteData } from "solid-start";
 import QRCode from "qrcode";
 
 type Person = {
