@@ -11,11 +11,13 @@ type Person = {
 		linkedin?: string;
 		github?: string;
 	};
+	url: string;
 	qrCode: string;
 };
 
 const fetchData = async (username: string) => {
 	if (username === "jlarky") {
+		const url = `https://imverified.up.railway.app/users/${username}`;
 		const person: Person = {
 			verfiied: true,
 			name: "Yaroslav Lapin",
@@ -25,10 +27,10 @@ const fetchData = async (username: string) => {
 				twitter: "https://twitter.com/jlarky",
 				linkedin: "https://www.linkedin.com/in/jlarky/",
 			},
-			qrCode: await QRCode.toDataURL(
-				`https://imverified.up.railway.app/users/${username}`,
-				{ color: { dark: "#1d9bf0", light: "#fff" } },
-			),
+			url,
+			qrCode: await QRCode.toDataURL(url, {
+				color: { dark: "#1d9bf0", light: "#fff" },
+			}),
 		};
 		return person;
 	}
@@ -113,9 +115,11 @@ function Verified(props: { person: Person }) {
 							<div class="space-y-4 lg:ml-[190px]">
 								<div class="aspect-w-3 aspect-h-2">
 									<img
+										height="80"
+										width="80"
 										class="rounded-lg object-cover shadow-lg"
 										src={person.imageUrl}
-										alt=""
+										alt={person.name}
 									/>
 								</div>
 
@@ -167,7 +171,14 @@ function Verified(props: { person: Person }) {
 						</li>
 						<li>
 							<div class="-mt-4">
-								<img src={person?.qrCode} />
+								<a href={person.url}>
+									<img
+										height="164"
+										width="164"
+										src={person?.qrCode}
+										alt={person.url}
+									/>
+								</a>
 							</div>
 						</li>
 					</ul>
