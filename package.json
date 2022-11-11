@@ -2,7 +2,7 @@
   "name": "bitchimverified",
   "scripts": {
     "dev": "solid-start dev",
-    "fmt": "rome format src/ --write",
+    "fmt": "rome format src/ --write --indent-style space",
     "build": "solid-start build",
     "start": "solid-start start"
   },
