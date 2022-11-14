@@ -1,20 +1,25 @@
 {
-  "name": "bitchimverified",
+  "name": "imverified",
   "scripts": {
     "dev": "solid-start dev",
     "fmt": "rome format src/ --write --indent-style space",
     "build": "solid-start build",
-    "start": "solid-start start"
+    "start": "solid-start start",
+    "lint": "eslint --fix \"**/*.{ts,tsx,js,jsx}\""
   },
   "type": "module",
   "devDependencies": {
     "@locator/babel-jsx": "^0.2.2",
-    "autoprefixer": "^10.4.12",
-    "postcss": "^8.4.18",
-    "solid-start-node": "^0.2.0",
-    "tailwindcss": "^3.2.0",
-    "typescript": "^4.8.4",
-    "vite": "^3.1.8"
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/parser": "^5.42.1",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.27.0",
+    "eslint-plugin-solid": "^0.8.0",
+    "postcss": "^8.4.19",
+    "solid-start-node": "^0.2.1",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^4.8.3",
+    "vite": "^3.1.0"
   },
   "dependencies": {
     "@solidjs/meta": "^0.28.0",
@@ -22,9 +27,13 @@
     "@types/qrcode": "^1.5.0",
     "qrcode": "^1.5.1",
     "rome": "^10.0.1",
-    "solid-js": "^1.6.0",
-    "solid-start": "^0.2.0",
-    "undici": "^5.11.0"
+    "@upstash/ratelimit": "^0.1.5",
+    "@upstash/redis": "^1.16.0",
+    "dotenv": "^16.0.3",
+    "solid-js": "^1.5.7",
+    "solid-start": "^0.2.1",
+    "undici": "5.11.0",
+    "zod": "^3.19.1"
   },
   "engines": {
     "node": ">=16"
