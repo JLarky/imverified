@@ -1,5 +1,6 @@
 import { createResource, Show } from "solid-js";
 import { RouteDataArgs, useRouteData } from "solid-start";
+import { createServerData$ } from "solid-start/server";
 import QRCode from "qrcode";
 
 type Person = {
@@ -38,8 +39,9 @@ const fetchData = async (username: string) => {
 };
 
 export function routeData({ params }: RouteDataArgs) {
-  const [users] = createResource(() => fetchData(params.username));
-  return users;
+  return createServerData$(([, username]) => fetchData(username), {
+    key: () => ["users", params.username],
+  });
 }
 
 export default function User() {
