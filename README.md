@@ -1,5 +1,14 @@
 # I'm verified
 
+Deployed version:
+
+https://imverified.up.railway.app/users/jlarky
+
+Twitter discussion:
+
+- https://twitter.com/ParasocialFix/status/1592077131399409664
+- https://twitter.com/JLarky/status/1590960112319225856
+
 ## Clone
 
 ```bash
