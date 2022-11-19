@@ -1,4 +1,5 @@
 import { For } from "solid-js";
+import { Head, Meta, Title } from "solid-start";
 import users_js from "../../data/twitter_js.json";
 import users_js2 from "../../data/twitter_js2.json";
 
@@ -10,6 +11,13 @@ const users = [...rest, ...users_js2].sort(
 export default function Mastodon() {
   return (
     <main class="mx-auto text-[#d9e1e8] p-4 bg-[#282c37]">
+      <Head>
+        <Title>Tech twitter codex</Title>
+        <Meta
+          name="description"
+          content="How do you find all those people you used to get recommended by twitter algo"
+        />
+      </Head>
       <h1 class="text-center max-6-xs text-2xl text-[#d9e1e8] my-16">
         If you are fleeting from #techtwitter, this resource could be helpful
         for you.
