@@ -1,0 +1,38 @@
+[
+  {
+    "username": "jlarky@fosstodon.org",
+    "displayName": "JLarky",
+    "avatar": "https://media.weingaertner-it.de/mastodontech/cache/accounts/avatars/109/366/390/715/807/512/original/3264ffdae4709732.png",
+    "twitterFollowers": 1000,
+    "tags": ["solid", "astro", "react", "elixir"],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "mgechev@mstdn.social",
+    "displayName": "Minko Gechev",
+    "avatar": "https://media.weingaertner-it.de/mastodontech/cache/accounts/avatars/109/344/358/841/196/690/original/da006fa1988519ec.jpg",
+    "twitterFollowers": 46900,
+    "tags": ["angular"],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "surma@toot.cafe",
+    "displayName": "Surma",
+    "avatar": "https://media.weingaertner-it.de/mastodontech/cache/accounts/avatars/000/045/756/original/f3f63a77010763ba.jpeg",
+    "twitterFollowers": 42000,
+    "tags": ["shopify", "google"],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "slightlyoff@toot.cafe",
+    "displayName": "Alex Russell",
+    "avatar": "https://media.weingaertner-it.de/mastodontech/cache/accounts/avatars/000/002/668/original/9898017bd29aa3b2.png",
+    "twitterFollowers": 35900,
+    "tags": ["hates react"],
+    "isVerified": true,
+    "isActive": true
+  }
+]

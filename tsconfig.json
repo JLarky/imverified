@@ -11,6 +11,7 @@
     "jsx": "preserve",
     "types": ["vite/client"],
     "baseUrl": "./",
+    "resolveJsonModule": true,
     "paths": {
       "~/*": ["./src/*"]
     }

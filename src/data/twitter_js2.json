@@ -1,0 +1,335 @@
+[
+  {
+    "username": "matthewp@c.im",
+    "displayName": "Matthew Phillips",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/307/498/150/316/595/original/733bcbe62cbb9e53.jpg",
+    "twitterFollowers": 0,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "jlengstorf@hachyderm.io",
+    "displayName": "Jason Lengstorf",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/304/404/199/342/478/original/687c583f0ff68ef9.jpg",
+    "twitterFollowers": 44900,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "shaundai@mas.to",
+    "displayName": "Shaundai Person",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/343/707/443/797/991/original/7846553cdb6dd3aa.png",
+    "twitterFollowers": 0,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "danielroe@mas.to",
+    "displayName": "Daniel Roe • Modern Frontends",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/253/958/699/622/987/original/aaeb277ec970873c.jpg",
+    "twitterFollowers": 5000,
+    "tags": ["nuxtjs", "vuejs"],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "stevensanderson@mastodon.social",
+    "displayName": "stevensanderson",
+    "avatar": "https://fosstodon.org/avatars/original/missing.png",
+    "twitterFollowers": 22500,
+    "tags": ["knockoutjs"],
+    "isVerified": true,
+    "isActive": false
+  },
+  {
+    "username": "cyco130@mas.to",
+    "displayName": "Fatih Aygün",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/301/763/261/261/407/original/cfa69010c9133d13.jpeg",
+    "twitterFollowers": 0,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "chantastic@hachyderm.io",
+    "displayName": "chantastic",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/366/017/878/297/850/original/e15d85bdd1a471b0.png",
+    "twitterFollowers": 15300,
+    "tags": ["remix"],
+    "isVerified": true,
+    "isActive": false
+  },
+  {
+    "username": "nmoo@mas.to",
+    "displayName": "nate",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/363/352/369/083/763/original/39c1fc38eaa58324.jpg",
+    "twitterFollowers": 0,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "bholmesdev@techhub.social",
+    "displayName": "Ben Holmes",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/365/832/467/800/876/original/641bf3253d4313e6.jpg",
+    "twitterFollowers": 7500,
+    "tags": ["astro"],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "erika@gamedevalliance.fr",
+    "displayName": "Erika",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/308/365/939/198/026/original/eee270a3b13f46ae.jpg",
+    "twitterFollowers": 0,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "aigoncharov@hachyderm.io",
+    "displayName": "Andrey Goncharov",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/285/007/134/893/855/original/7cc665b56f9df960.jpg",
+    "twitterFollowers": 0,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "oleg008@fosstodon.org",
+    "displayName": "Oleg",
+    "avatar": "https://cdn.fosstodon.org/accounts/avatars/108/209/773/629/420/594/original/e816f4b370445189.jpeg",
+    "twitterFollowers": 0,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "mcollina@fosstodon.org",
+    "displayName": "Matteo Collina",
+    "avatar": "https://cdn.fosstodon.org/accounts/avatars/109/253/308/697/489/074/original/047c787ef9e3c94a.png",
+    "twitterFollowers": 30000,
+    "tags": ["nodejs"],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "diegohaz@mastodon.social",
+    "displayName": "Haz",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/363/961/715/186/141/original/8cc60dd3e68ac1a2.jpg",
+    "twitterFollowers": 0,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "seldo@mastodon.social",
+    "displayName": "seldo",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/000/048/582/original/b44be0fc03ed57be.png",
+    "twitterFollowers": 0,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "LifeLongThinker@mastodon.online",
+    "displayName": "Sebastian Felling",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/108/187/633/138/178/535/original/001012d774ba0f21.jpg",
+    "twitterFollowers": 0,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "denvercoder@extwitriates.com",
+    "displayName": "Tim Myers",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/305/499/996/048/030/original/8a439cb449a33f95.png",
+    "twitterFollowers": 26700,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "kyleshevlin@mastodon.social",
+    "displayName": "Kyle Shevlin",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/249/833/172/829/173/original/378182796ad9caeb.jpeg",
+    "twitterFollowers": 0,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "ajcwebdev@c.im",
+    "displayName": "Anthony Campolo",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/295/302/798/410/198/original/67db6526b6dd88a2.jpg",
+    "twitterFollowers": 0,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "thelarkinn@indieweb.social",
+    "displayName": "Sean Larkin",
+    "avatar": "https://fosstodon.org/avatars/original/missing.png",
+    "twitterFollowers": 46500,
+    "tags": ["webpack"],
+    "isVerified": false,
+    "isActive": false
+  },
+  {
+    "username": "andrewrk@mastodon.social",
+    "displayName": "Andrew Kelley",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/000/164/838/original/419cdabee9673bfe.jpeg",
+    "twitterFollowers": 0,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "Tatianamac@mastodon.social",
+    "displayName": "Tatiana Mac",
+    "avatar": "https://cdn.fosstodon.org/accounts/avatars/000/039/499/original/57cf9bee8b848dae.jpeg",
+    "twitterFollowers": 0,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "joelhooks@hachyderm.io",
+    "displayName": "joel ",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/362/636/148/774/347/original/97e8730750e831f8.jpeg",
+    "twitterFollowers": 0,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "zachleat@zachleat.com",
+    "displayName": "Zach Leatherman ",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/286/920/292/920/298/original/68731f130138b1f4.png",
+    "twitterFollowers": 24100,
+    "tags": ["11ty", "netlify"],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "algo_luca@hachyderm.io",
+    "displayName": "Luca Palmieri",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/290/397/033/357/869/original/7c431908b3165446.jpeg",
+    "twitterFollowers": 0,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "joelnet@indieweb.social",
+    "displayName": "Joel Thoms",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/305/471/904/011/047/original/df3c33fb043f9ef7.jpg",
+    "twitterFollowers": 0,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "kitsonk@aus.social",
+    "displayName": "kitsonk.meh",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/108/229/114/480/164/047/original/3192deb9d2153e20.jpg",
+    "twitterFollowers": 0,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "loige@mastodon.ie",
+    "displayName": "Luciano Mammino",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/302/275/044/422/487/original/8669351cef9f130f.jpg",
+    "twitterFollowers": 0,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "webreflection@mastodon.social",
+    "displayName": "Andrea Giammarchi",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/301/680/587/247/474/original/8fd541d701a0b9bd.jpg",
+    "twitterFollowers": 0,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "jamon@mstdn.social",
+    "displayName": "Jamon Holmgren",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/281/590/885/541/680/original/4c7b9716de05c88e.png",
+    "twitterFollowers": 0,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "lpil@lor.sh",
+    "displayName": "Louis Pilfold",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/307/771/082/139/825/original/784636b20aeaa4c1.jpg",
+    "twitterFollowers": 0,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "lilac@lor.sh",
+    "displayName": "Kayla",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/325/229/321/586/885/original/0851f3c4419b3463.jpg",
+    "twitterFollowers": 0,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "rich_harris@toot.cafe",
+    "displayName": "Rich Harris",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/000/025/543/original/d3ea1fa1c77c82cd.jpeg",
+    "twitterFollowers": 69100,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "jessicasachs@mastodon.social",
+    "displayName": "jess",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/243/816/987/747/359/original/c4fb400aeee1f072.png",
+    "twitterFollowers": 0,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "sarah11918@mastodon.social",
+    "displayName": "Sarah Rainsberger",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/307/607/762/686/835/original/28fcc575c31abcf4.jpg",
+    "twitterFollowers": 0,
+    "tags": [],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "5t3ph@front-end.social",
+    "displayName": "Stephanie Eckles",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/361/742/019/237/190/original/14ec6680606ba3ca.png",
+    "twitterFollowers": 16200,
+    "tags": ["css"],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "thomasreggi@indieweb.social",
+    "displayName": "thomas ",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/107/567/885/733/495/463/original/2bd83c7bb91da99a.jpeg",
+    "twitterFollowers": 3200,
+    "tags": ["astro"],
+    "isVerified": true,
+    "isActive": true
+  }
+]
