@@ -2,9 +2,10 @@ import { For } from "solid-js";
 import { Head, Meta, Title } from "solid-start";
 import users_js from "../../data/twitter_js.json";
 import users_js2 from "../../data/twitter_js2.json";
+import users_js3 from "../../data/twitter_js3.json";
 
 const [jlarky, ...rest] = users_js;
-const users = [...rest, ...users_js2].sort(
+const users = [...rest, ...users_js2, ...users_js3].sort(
   (a, b) => b.twitterFollowers - a.twitterFollowers
 );
 

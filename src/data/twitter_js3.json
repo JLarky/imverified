@@ -1,0 +1,47 @@
+[
+  {
+    "username": "nickytonline@toot.cafe",
+    "displayName": "Nick Taylor",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/000/078/781/original/caf690d945975758.png",
+    "twitterFollowers": 3845,
+    "tags": ["neflity"],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "developit@mastodon.social",
+    "displayName": "Jason Miller ",
+    "avatar": "https://cdn.masto.host/indiewebsocial/cache/accounts/avatars/109/295/678/339/537/779/original/52b88d27aef82dbc.jpg",
+    "twitterFollowers": 57600,
+    "tags": ["preact"],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "developit@toot.cafe",
+    "displayName": "Jason Miller ",
+    "avatar": "https://cdn.masto.host/indiewebsocial/cache/accounts/avatars/109/328/420/263/397/747/original/ab4116c2d0282cd2.jpg",
+    "twitterFollowers": 57600,
+    "tags": ["preact"],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "jaffathecake@mastodon.social",
+    "displayName": "Jake Archibald",
+    "avatar": "https://cdn.masto.host/indiewebsocial/cache/accounts/avatars/000/121/553/original/fea47290575b0b51.jpg",
+    "twitterFollowers": 98200,
+    "tags": ["chrome"],
+    "isVerified": true,
+    "isActive": true
+  },
+  {
+    "username": "erika@gamedevalliance.fr",
+    "displayName": "Erika",
+    "avatar": "https://cdn.masto.host/indiewebsocial/cache/accounts/avatars/109/314/200/670/655/089/original/da3f3a11084f32a2.jpg",
+    "twitterFollowers": 66,
+    "tags": ["astro"],
+    "isVerified": true,
+    "isActive": true
+  }
+]
