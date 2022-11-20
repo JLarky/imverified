@@ -15,6 +15,7 @@ export default function Import() {
   } catch (e) {
     console.error(e);
   }
+  const [removedUsers, setRemovedUsers] = createSignal<string[]>([]);
   const [html, setHTML] = createSignal(old);
   createEffect(() => {
     localStorage.setItem("import_html", html());
@@ -85,7 +86,11 @@ export default function Import() {
         readOnly
         class="w-full h-20 text-black"
         placeholder="Wait for it..."
-        value={JSON.stringify(users(), null, 2)}
+        value={JSON.stringify(
+          users().filter((u) => !removedUsers().includes(u.username)),
+          null,
+          2
+        )}
         onClick={(e) => {
           e.currentTarget.setSelectionRange(0, e.currentTarget.value.length);
         }}
@@ -93,11 +98,29 @@ export default function Import() {
       <p>Preview: ({users().length})</p>
       <For each={users()}>
         {(user) => (
-          <MastodonUser
-            username={user.username}
-            displayName={user.displayName}
-            avatar={user.avatar}
-          />
+          <div class="flex">
+            <button
+              class="w-16"
+              onClick={() =>
+                removedUsers().includes(user.username)
+                  ? setRemovedUsers(
+                      removedUsers().filter((u) => u !== user.username)
+                    )
+                  : setRemovedUsers([...removedUsers(), user.username])
+              }
+            >
+              <span class="m-auto">
+                {removedUsers().includes(user.username) ? "Add" : "Remove"}
+              </span>
+            </button>
+            <div class="flex-1">
+              <MastodonUser
+                username={user.username}
+                displayName={user.displayName}
+                avatar={user.avatar}
+              />
+            </div>
+          </div>
         )}
       </For>
     </>
