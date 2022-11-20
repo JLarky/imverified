@@ -1,6 +1,7 @@
 import solid from "solid-start/vite";
 import dotenv from "dotenv";
 import { defineConfig } from "vite";
+import deno from "solid-start-deno";
 
 export default defineConfig(() => {
   dotenv.config();
@@ -20,6 +21,7 @@ export default defineConfig(() => {
             ],
           ],
         },
+        adapter: deno(),
         islands: true,
         islandsRouter: true,
       }),
