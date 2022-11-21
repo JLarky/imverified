@@ -33,7 +33,13 @@ export const MastodonUser = (props: {
                 class="account__avatar"
                 style={{ width: "46px", height: "46px" }}
               >
-                <img src={props.avatar} alt={props.username} />
+                <img
+                  loading="lazy"
+                  src={props.avatar}
+                  alt={props.username}
+                  width="46"
+                  height="46"
+                />
               </div>
             </div>
             <span class="display-name block max-w-full truncate text-[#9baec8]">
