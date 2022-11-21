@@ -3,6 +3,10 @@ import { Head, Meta, Title } from "solid-start";
 import users_js from "../../data/twitter_js.json";
 import users_js2 from "../../data/twitter_js2.json";
 import users_js3 from "../../data/twitter_js3.json";
+import { unstable_island } from "solid-start";
+
+// import Counter from "../../components/Counter";
+const Counter = unstable_island(() => import("../../components/Counter"));
 
 const [jlarky, ...rest] = users_js;
 const users = [...rest, ...users_js2, ...users_js3].sort(
@@ -23,6 +27,7 @@ export default function Mastodon() {
         If you are fleeting from #techtwitter, this resource could be helpful
         for you.
       </h1>
+      {1 && <Counter />}
       <details>
         <summary class="">Tell me more</summary>
         <p class="">
