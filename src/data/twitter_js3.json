@@ -43,5 +43,14 @@
     "tags": ["astro"],
     "isVerified": true,
     "isActive": true
+  },
+  {
+    "username": "patak@mas.to",
+    "displayName": "patak",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/108/199/911/980/140/124/original/146224b1a50a437f.jpg",
+    "twitterFollowers": 6000,
+    "tags": ["vite", "vue"],
+    "isVerified": true,
+    "isActive": true
   }
 ]
