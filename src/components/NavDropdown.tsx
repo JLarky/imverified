@@ -1,7 +1,8 @@
-import { createSignal, createEffect, createMemo } from "solid-js";
+import { createSignal, createEffect } from "solid-js";
 
 export default function NavDropdown() {
   const [show, setShow] = createSignal(false);
+  const [isLoaded, setIsLoaded] = createSignal(false);
   const [username, setUsername] = createSignal("");
   createEffect(() => {
     let old = "";
@@ -13,6 +14,7 @@ export default function NavDropdown() {
       console.error(e);
     }
     setUsername(old);
+    setIsLoaded(true);
   });
   createEffect(() => {
     console.log("username", username());
@@ -41,7 +43,7 @@ export default function NavDropdown() {
       {/* {iframUrl() && <iframe src={iframUrl()} />} */}
       <button
         type="button"
-        class="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+        class="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-600"
         id="user-menu-button"
         aria-expanded="false"
         data-dropdown-toggle="user-dropdown"
@@ -49,7 +51,12 @@ export default function NavDropdown() {
         onClick={() => setShow(!show())}
       >
         <span class="sr-only">Open user menu</span>
-        <div class="overflow-hidden relative w-10 h-10 bg-gray-100 rounded-full dark:bg-gray-600">
+        <div
+          class={
+            "overflow-hidden relative w-10 h-10  rounded-full " +
+            (isLoaded() && username() === "" ? "bg-gray-100" : "bg-gray-600")
+          }
+        >
           <svg
             class="absolute -left-1 w-12 h-12 text-gray-400"
             fill="currentColor"
@@ -67,15 +74,13 @@ export default function NavDropdown() {
       <div
         class={`z-50 absolute right-10 ${
           show() ? "block" : "hidden"
-        } my-2 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600`}
+        } my-2 text-base list-none divide-y rounded shadow bg-gray-700 divide-gray-600`}
         id="user-dropdown"
       >
         {username() && (
           <div class="px-4 py-3">
-            <span class="block text-sm text-gray-900 dark:text-white">
-              Your username is
-            </span>
-            <span class="block text-sm font-medium text-gray-500 truncate dark:text-gray-400">
+            <span class="block text-sm  text-white">Your username is</span>
+            <span class="block text-sm font-medium  truncate text-gray-400">
               {username()}
             </span>
           </div>
@@ -84,7 +89,7 @@ export default function NavDropdown() {
           {/* <li>
             <a
               href="#"
-              class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+              class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:bg-gray-600 text-gray-200 hover:text-white"
             >
               Dashboard
             </a>
@@ -92,7 +97,7 @@ export default function NavDropdown() {
           <li>
             <a
               href="#"
-              class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+              class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:bg-gray-600 text-gray-200 hover:text-white"
             >
               Settings
             </a>
@@ -126,7 +131,7 @@ export default function NavDropdown() {
                 }
                 alert("Username has to be in a @jlarky@fosstodon.org format");
               }}
-              class="flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+              class="flex w-full px-4 py-2 text-sm hover:bg-gray-600 text-gray-200 hover:text-white"
             >
               Set username
             </button>
@@ -137,7 +142,7 @@ export default function NavDropdown() {
                 localStorage.removeItem("username");
                 setUsername("");
               }}
-              class="flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+              class="flex w-full px-4 py-2 text-sm hover:bg-gray-600 text-gray-200 hover:text-white"
             >
               Sign out
             </button>
@@ -147,7 +152,7 @@ export default function NavDropdown() {
       <button
         data-collapse-toggle="mobile-menu-2"
         type="button"
-        class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2"
         aria-controls="mobile-menu-2"
         aria-expanded="false"
       >
