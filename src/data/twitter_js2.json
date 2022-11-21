@@ -81,15 +81,6 @@
     "isActive": true
   },
   {
-    "username": "erika@gamedevalliance.fr",
-    "displayName": "Erika",
-    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/308/365/939/198/026/original/eee270a3b13f46ae.jpg",
-    "twitterFollowers": 0,
-    "tags": [],
-    "isVerified": true,
-    "isActive": true
-  },
-  {
     "username": "aigoncharov@hachyderm.io",
     "displayName": "Andrey Goncharov",
     "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/285/007/134/893/855/original/7cc665b56f9df960.jpg",
