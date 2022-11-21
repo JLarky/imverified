@@ -30,21 +30,15 @@ export default function Mastodon() {
           popular on twitter first, so you may or may not want to follow them.
         </p>
         <p class="">
-          Saving your instance at{" "}
-          <a
-            href="https://mastodonprofile.web.app/"
-            class="hover:underline text-blue-600"
+          We are using mastodon-redirect.deno.dev to redirect you to the
+          instance that you are logged in. Please{" "}
+          <button
+            class="text-blue-300 hover:text-blue-500 underline"
+            onclick="javascript:document.getElementById('set-username').click()"
           >
-            mastodonprofile.web.app
-          </a>{" "}
-          will help you a lot :) See{" "}
-          <a
-            href="https://twitter.com/dev_elizabeth/status/1593511444389183489"
-            class="hover:underline text-blue-600"
-          >
-            this tweet
-          </a>{" "}
-          for more info.
+            set your username
+          </button>{" "}
+          for it to work correctly.
         </p>
       </details>
       <p class="my-4">That's just me, lol</p>
@@ -100,7 +94,8 @@ const MastodonUser = (props: {
             target="_blank"
             class="account__display-name flex items-center flex-auto text-sm overflow-hidden no-underline gap-2"
             title={props.username}
-            href={`https://mastodonprofile.web.app/@${props.username}`}
+            data-href={`https://mastodon-redirect.deno.dev/?redirect=@${props.username}`}
+            href={`https://mastodon-redirect.deno.dev/?redirect=@${props.username}`}
           >
             <div class="account__avatar-wrapper">
               <div
