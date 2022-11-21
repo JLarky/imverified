@@ -27,8 +27,8 @@
     "isActive": true
   },
   {
-    "username": "danielroe@mas.to",
-    "displayName": "Daniel Roe • Modern Frontends",
+    "username": "daniel@roe.dev",
+    "displayName": "Daniel Roe",
     "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/253/958/699/622/987/original/aaeb277ec970873c.jpg",
     "twitterFollowers": 5000,
     "tags": ["nuxtjs", "vuejs"],
