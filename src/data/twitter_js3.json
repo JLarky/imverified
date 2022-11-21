@@ -52,5 +52,14 @@
     "tags": ["vite", "vue"],
     "isVerified": true,
     "isActive": true
+  },
+  {
+    "username": "antfu@mas.to",
+    "displayName": "Anthony Fu",
+    "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/251/572/175/428/767/original/3c956f733e1d18b0.png",
+    "twitterFollowers": 29300,
+    "tags": ["vue", "vite"],
+    "isVerified": true,
+    "isActive": true
   }
 ]
