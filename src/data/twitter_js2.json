@@ -264,8 +264,8 @@
     "username": "jamon@mstdn.social",
     "displayName": "Jamon Holmgren",
     "avatar": "https://cdn.fosstodon.org/cache/accounts/avatars/109/281/590/885/541/680/original/4c7b9716de05c88e.png",
-    "twitterFollowers": 0,
-    "tags": [],
+    "twitterFollowers": 15800,
+    "tags": ["react native"],
     "isVerified": true,
     "isActive": true
   },
