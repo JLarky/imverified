@@ -3,6 +3,11 @@ import { Head, Meta, Title } from "solid-start";
 import users_js from "../../data/twitter_js.json";
 import users_js2 from "../../data/twitter_js2.json";
 import users_js3 from "../../data/twitter_js3.json";
+import { unstable_island } from "solid-start";
+
+const SetUsernameButton = unstable_island(
+  () => import("../../components/SetUsernameButton")
+);
 
 const [jlarky, ...rest] = users_js;
 const users = [...rest, ...users_js2, ...users_js3].sort(
@@ -31,7 +36,7 @@ export default function Mastodon() {
         </p>
         <p class="">
           We are using mastodon-redirect.deno.dev to redirect you to the
-          instance that you are logged in. Please{" "}
+          instance that you are logged in. Please {1 && <SetUsernameButton />}{" "}
           <button
             class="text-blue-300 hover:text-blue-500 underline"
             onclick="javascript:document.getElementById('set-username').click()"
