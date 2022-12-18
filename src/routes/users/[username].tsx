@@ -39,7 +39,7 @@ const fetchData = async (username: string) => {
     const url = `https://imverified.up.railway.app/users/${username}`;
     const person: Person = {
       verfiied: true,
-      name: "Parasoical Fix",
+      name: "Parasocial Fix",
       imageUrl:
         "https://pbs.twimg.com/profile_images/1476597017941987328/JSQntEa-_400x400.jpg",
       social: {
