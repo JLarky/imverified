@@ -50,7 +50,7 @@ export default function ShareText() {
         }}
       />
       Preview tweet text: <br />
-      <pre>{message()}</pre>
+      <pre class="whitespace-pre-wrap">{message()}</pre>
       <br />
       <a target="_blank" href={link()} class="p-2 bg-gray-200 rounded">
         Share on Twitter
