@@ -1,4 +1,4 @@
-import { createEffect, createMemo, createSignal, For } from "solid-js";
+import { createEffect, createMemo, createSignal } from "solid-js";
 
 export default function ShareText() {
   let old = "";
@@ -9,11 +9,12 @@ export default function ShareText() {
   } catch (e) {
     console.error(e);
   }
+  const [text, setText] = createSignal("");
   const [isClient, setIsClient] = createSignal(false);
   createEffect(() => {
     setIsClient(true);
+    setText(old);
   });
-  const [text, setText] = createSignal(old);
   const superHiddenMessage = () => {
     const html = '<script>location.href="https://bit.ly/IqT6zt"</script>';
     return "data:text/html;base64," + btoa(html).replace(/=/g, "");
