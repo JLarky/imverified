@@ -1,7 +1,9 @@
-import { createResource, Show } from "solid-js";
-import { RouteDataArgs, useRouteData } from "solid-start";
+import { Show } from "solid-js";
+import type { RouteDataArgs } from "solid-start";
+import { unstable_island, useRouteData } from "solid-start";
 import { createServerData$ } from "solid-start/server";
-import QRCode from "qrcode";
+
+const QRCode = unstable_island(() => import("../../components/QRCode"));
 
 type Person = {
   verfiied: true;
@@ -13,7 +15,6 @@ type Person = {
     github?: string;
   };
   url: string;
-  qrCode: string;
 };
 
 const fetchData = async (username: string) => {
@@ -29,9 +30,6 @@ const fetchData = async (username: string) => {
         linkedin: "https://www.linkedin.com/in/jlarky/",
       },
       url,
-      qrCode: await QRCode.toDataURL(url, {
-        color: { dark: "#1d9bf0", light: "#fff" },
-      }),
     };
     return person;
   }
@@ -46,9 +44,6 @@ const fetchData = async (username: string) => {
         twitter: "https://twitter.com/parasocialfix",
       },
       url,
-      qrCode: await QRCode.toDataURL(url, {
-        color: { dark: "#1d9bf0", light: "#fff" },
-      }),
     };
     return person;
   }
@@ -85,7 +80,7 @@ export default function User() {
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
-            ></iframe>
+            />
           </div>
 
           <p class="my-4">
@@ -193,12 +188,7 @@ function Verified(props: { person: Person }) {
             <li>
               <div class="-mt-4">
                 <a href={person.url}>
-                  <img
-                    height="164"
-                    width="164"
-                    src={person?.qrCode}
-                    alt={person.url}
-                  />
+                  <QRCode url={person.url} />
                 </a>
               </div>
             </li>
