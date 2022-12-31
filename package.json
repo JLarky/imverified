@@ -4,6 +4,8 @@
     "dev": "solid-start dev",
     "fmt": "rome format src/ --write --indent-style space",
     "build": "solid-start build",
+    "preview": "(cd dist; deno run --allow-net=:8080 --allow-env --allow-read=. server.js)",
+    "deploy": "export $(cat .env | xargs); (cd dist/; deployctl deploy --prod --project=imverified --token $DENO_TOKEN ./server.js)",
     "start": "solid-start start",
     "lint": "eslint --fix \"**/*.{ts,tsx,js,jsx}\""
   },
