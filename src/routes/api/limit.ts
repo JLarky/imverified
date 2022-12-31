@@ -1,9 +1,13 @@
 import { Ratelimit } from "@upstash/ratelimit";
-import { Redis } from "@upstash/redis";
+import { Redis } from "@upstash/redis/cloudflare";
 import type { APIEvent } from "solid-start";
+import env from "../../env/server";
 
 const ratelimit = new Ratelimit({
-  redis: Redis.fromEnv(),
+  redis: Redis.fromEnv({
+    UPSTASH_REDIS_REST_URL: env.UPSTASH_REDIS_REST_URL,
+    UPSTASH_REDIS_REST_TOKEN: env.UPSTASH_REDIS_REST_TOKEN,
+  } as Record<string, string>),
   limiter: Ratelimit.fixedWindow(5, "10 s"),
 });
 

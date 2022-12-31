@@ -11,7 +11,9 @@ export const formatErrors = (
     })
     .filter(Boolean);
 
-const env = serverScheme.safeParse(process.env);
+const env = serverScheme.safeParse(
+  typeof process === "object" ? process.env : Deno.env.toObject()
+);
 
 if (env.success === false) {
   console.error(
