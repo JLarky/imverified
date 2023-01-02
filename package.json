@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "@solidjs/meta": "^0.28.0",
-    "@solidjs/router": "^0.5.0",
+    "@solidjs/router": "*",
     "@types/qrcode": "^1.5.0",
     "@upstash/ratelimit": "^0.1.5",
     "@upstash/redis": "^1.16.0",
@@ -33,8 +33,7 @@
     "qrcode": "^1.5.1",
     "rome": "^10.0.1",
     "solid-js": "^1.5.7",
-    "solid-start": "^0.2.1",
-    "solid-start-deno": "^0.2.5",
+    "solid-start": "*",
     "ultrahtml": "^1.0.1",
     "undici": "5.11.0",
     "zod": "^3.19.1"
