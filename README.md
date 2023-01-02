@@ -2,7 +2,7 @@
 
 Deployed version:
 
-https://imverified.up.railway.app/users/jlarky
+https://imverified.deno.dev/users/jlarky
 
 Twitter discussion:
 

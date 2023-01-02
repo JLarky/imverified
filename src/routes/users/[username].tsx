@@ -19,7 +19,7 @@ type Person = {
 
 const fetchData = async (username: string) => {
   if (username === "jlarky") {
-    const url = `https://imverified.up.railway.app/users/${username}`;
+    const url = `https://imverified.deno.dev/users/${username}`;
     const person: Person = {
       verfiied: true,
       name: "Yaroslav Lapin",
@@ -34,7 +34,7 @@ const fetchData = async (username: string) => {
     return person;
   }
   if (username === "parasocialfix") {
-    const url = `https://imverified.up.railway.app/users/${username}`;
+    const url = `https://imverified.deno.deploy/users/${username}`;
     const person: Person = {
       verfiied: true,
       name: "Parasocial Fix",
